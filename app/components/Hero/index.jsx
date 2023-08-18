@@ -1,14 +1,41 @@
-import React from 'react';
-import MaskText from '../Mask';
+import React, { useEffect, useRef, useLayoutEffect } from 'react';
 import ReactCurvedText from 'react-curved-text';
 import Image from 'next/image';
 import arrow from '../../../public/images/arrow.svg'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { ScrollTrigger } from 'gsap/all';
 import {animation} from './animation';
-// import { useInView } from 'react-intersection-observer';
+import { gsap } from 'gsap';
 
 const Hero = () => {
+
+
+  const textAnimation = useRef(null);
+  const slider = useRef(null);
+  let xPercent = 0;
+  let direction = 5;
+
+  useLayoutEffect( () => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(textAnimation.current, {
+      scrollTrigger: {
+        trigger: document.documentElement,
+        scrub: 0.25,
+        start: 0,
+        end: window.innerHeight,
+        onUpdate: e => direction = e.direction * -7
+      }})
+    requestAnimationFrame(animate);
+  })
+
+  const animate = () => {
+    gsap.set(textAnimation.current, {rotate: xPercent})
+    requestAnimationFrame(animate);
+    xPercent += 0.1 * direction;
+  }
+
+
 
   const { ref, inView, entry } = useInView({
     threshold: 0.75,
@@ -33,7 +60,7 @@ const Hero = () => {
             src={arrow}
             alt='arrow'
             className='w-[30px] h-[30px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-            <div>
+            <div ref={textAnimation}>
             <ReactCurvedText
             width={240}
             height={240}
@@ -44,7 +71,7 @@ const Hero = () => {
             startOffset={20}
             reversed={false}
             text="- digital specialist - digital specialist"
-            textProps={{ style: { fontSize: 24 } }}
+            textProps={{ style: { fontSize: 23 } }}
             textPathProps={null}
             tspanProps={null}
             ellipseProps={null}
@@ -59,7 +86,7 @@ const Hero = () => {
       {
       text.split(" ").map((word, index) => {
     return <p key={index} className="overflow-hidden text-clamp font-clash leading-none">
-              <motion.span className="" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span>
+              <motion.span className="text-4xl" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span>
             </p>
         })
         }

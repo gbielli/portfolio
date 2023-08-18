@@ -23,10 +23,10 @@ body{
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-clash);
+  font-family: var(--font-clash);;
 }
 
-p, a{
+p, a, span {
   font-family: var(--font-archivo);
 }
 

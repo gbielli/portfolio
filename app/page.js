@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
     <Hero />
-    <MaskText phrase="Hello world" className="text-5xl"/>
+    <MaskText />
     </>
   )
 }
