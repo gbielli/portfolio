@@ -52,9 +52,9 @@ const Hero = () => {
 
       <div className='h-screen flex items-center bg-grey'>
 
-        <div className='px-6 w-full text-gray-200 flex flex-col items-center flex-1 gap-20 h-screen pt-20' >
+        <div className='px-6 w-full text-gray-200 flex flex-col items-center flex-1 gap-10 pt-20' >
 
-          <div className='img self-start ml-5 relative'>
+          <div className='img self-start relative'>
             <Image
             priority
             src={arrow}
@@ -80,18 +80,17 @@ const Hero = () => {
         />
         </div>
           </div>
-          <div className='inline-flex mx-auto gap-5'>
+          <div className='grid grid-cols-1 md:grid-cols-3 mx-auto gap-5'>
 
-          <div ref={ref} className="">
+          <h1 ref={ref} className=" col-span-2 overflow-hidden leading-none">
       {
       text.split(" ").map((word, index) => {
-    return <p key={index} className="overflow-hidden text-clamp font-clash leading-none">
-              <motion.span className="text-4xl" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span>
-            </p>
+    return <span className='overflow-hidden relative inline-flex' key={index}><motion.span className="text-[16vw] font-clash mr-1" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
+            
         })
         }
-    </div>
-            <div className='self-end max-w-xs mb-7 overflow-hidden inline'>
+    </h1>
+            <div className='col col-span-1 self-end max-w-xs mb-7 overflow-hidden inline'>
               <motion.p variants={animation} initial="initial" animate={inView ? "enter" : ""}>J'aide les entreprises à développer l'acquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
               </div>
           </div>

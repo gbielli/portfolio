@@ -2,9 +2,9 @@
 
 import Image from 'next/image'
 import { useEffect } from 'react';
-import Hero from './components/Hero';
-import MaskText from './components/Mask';
-import { Mako } from 'next/font/google';
+import Hero from './components/Hero/page';
+import MaskText from './components/Mask/page';
+
 
 export default function Home() {
 

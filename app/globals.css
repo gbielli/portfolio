@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /* --font-clash: 'Clash Display', sans-serif; */
+  /* --font-archivo: 'Archivo', sans-serif; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,14 +22,16 @@ body{
   margin: 0px;
   overflow: hidden; 
   box-sizing: border-box;
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--font-clash);;
-}
-
-p, a, span {
   font-family: var(--font-archivo);
+}
+
+h4 {
+  line-height: 2.45em;
+}
+
+
+/* h1, h2, h3, h4 {
+  font-family: var(--font-clash);;
 }
 
 /* 

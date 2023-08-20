@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       grey: '#f8f8f8',
+      beige: '#FFFDF4',
     },
     extend: {
       fontSize: {

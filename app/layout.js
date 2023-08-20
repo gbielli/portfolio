@@ -1,13 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google';
-import Nav from './components/Header';
-import Footer from './components/Footer';
-import localFont from '@next/font/local';
+import Nav from './components/Header/page';
+import Footer from './components/Footer/page';
+import localFont from 'next/font/local'
 
 const clashDisplay = localFont({
   src: [
     {
-      path: '../public/fonts/ClashDisplay-Semibold.ttf',
+      path: '..//public/fonts/ClashDisplay-Semibold.ttf',
     },
   ],
   variable: '--font-clash'
