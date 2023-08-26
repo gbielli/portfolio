@@ -82,16 +82,16 @@ const Hero = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-3 mx-auto gap-5'>
 
-          <h1 ref={ref} className=" col-span-2 overflow-hidden leading-none">
+          <h1 ref={ref} className="col-span-2 leading-none">
       {
       text.split(" ").map((word, index) => {
-    return <span className='overflow-hidden relative inline-flex' key={index}><motion.span className="text-[16vw] font-clash mr-1" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
+    return <span className='overflow-hidden relative inline-flex' key={index}><motion.span className="text-[17vw] font-clash" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
             
         })
         }
     </h1>
-            <div className='col col-span-1 self-end max-w-xs mb-7 overflow-hidden inline'>
-              <motion.p variants={animation} initial="initial" animate={inView ? "enter" : ""}>J'aide les entreprises à développer l'acquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
+            <div className='col col-span-1 self-end max-w-xs mb-7 overflow-hidden'>
+              <motion.p className='text-[1.1em]' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J aide les entreprises à développer lvacquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
               </div>
           </div>
 

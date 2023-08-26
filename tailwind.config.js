@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,7 +8,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      grey: '#f8f8f8',
+      gris: '#f8f8f8',
       beige: '#FFFDF4',
     },
     extend: {
@@ -21,8 +22,7 @@ module.exports = {
       },
       fontFamily: {
         clash: ['var(--font-clash)'],
-        archivo: ['var(--font-archivo']
-
+        archivo: ['var(--font-archivo)']
       },
     },
   },

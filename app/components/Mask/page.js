@@ -18,7 +18,7 @@ export default function MaskText() {
     });
   
     return(
-        <section className='bg-grey block'>
+        <section className='bg-grey block mt-20'>
       {/* <div ref={ref} className="">
         {
           phrases.map( (phrase, index) => {
@@ -29,21 +29,17 @@ export default function MaskText() {
         }
       </div> */}
 
-      <div className='w-2/3 px-6'>
+      <div className='xl:w-1/2  md:w-3/4 w-full px-6 leading-10'>
 
-     <h4 ref={ref} className="overflow-hidden">
+     <h4 ref={ref} className="overflow-hidden pb-20">
       {
       phrase.split(" ").map((word, index) => {
-    return <span className='overflow-hidden relative inline-flex gap-2' key={index}><motion.span className="block relative mr-1 text-3xl" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""}>{word}</motion.span></span>
+    return <span className='overflow-hidden relative inline-flex gap-2' key={index}><motion.span className="block relative mr-1 text-4xl" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""}>{word}</motion.span></span>
 
         })
         }
 
     </h4>
-    </div>
-
-    <div className='mx-auto'> 
-      <p className='text-center font-clash'>Créer une expérience,</p>
     </div>
       </section>
     )
