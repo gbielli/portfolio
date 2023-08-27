@@ -10,6 +10,8 @@ module.exports = {
     colors: {
       gris: '#f8f8f8',
       beige: '#FFFDF4',
+      black: '#141414',
+      white: '#fff'
     },
     extend: {
       fontSize: {

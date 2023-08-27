@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef, useLayoutEffect } from 'react';
 import ReactCurvedText from 'react-curved-text';
 import Image from 'next/image';
@@ -85,13 +87,13 @@ const Hero = () => {
           <h1 ref={ref} className="col-span-2 leading-none">
       {
       text.split(" ").map((word, index) => {
-    return <span className='overflow-hidden relative inline-flex' key={index}><motion.span className="text-[17vw] font-clash" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
+    return <span className='overflow-hidden relative inline-flex' key={index}><motion.span className="text-[17vw] font-clash text-black" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
             
         })
         }
     </h1>
             <div className='col col-span-1 self-end max-w-xs mb-7 overflow-hidden'>
-              <motion.p className='text-[1.1em]' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J aide les entreprises à développer lvacquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
+              <motion.p className='text-[1.1em]' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J aide les entreprises à développer l acquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
               </div>
           </div>
 

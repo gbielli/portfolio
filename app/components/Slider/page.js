@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
@@ -53,11 +55,11 @@ const Slider = () => {
     const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
-        <div ref={container} className='flex flex-col gap-10 relative pt-20 bg-grey z-1'>
-            <motion.div style={{x: x1}} className='flex relative gap-10 w-[120vw] left-[-10vw]'>
+        <div ref={container} className='w-full flex flex-col gap-10 relative pt-20 bg-grey z-1'>
+            <motion.div style={{x: x1}} className='flex relative gap-10 left-[-10vw] w-[150vw]'>
                     {
                         slider1.map( (project, index) => {
-                            return <div key={index} className='w-1/4 h-[20vw] flex items-center justify-center' style={{backgroundColor: project.color}} >
+                            return <div key={index} className='w-[40vw] h-[20vw] flex items-center justify-center' style={{backgroundColor: project.color}} >
                                 <div className='relative w-3/4 h-3/4'>
                              
                                     <Image 
@@ -70,10 +72,10 @@ const Slider = () => {
                         })
                     }
                 </motion.div>
-                <motion.div style={{x: x2}} className='flex relative gap-10 w-[120vw] left-[-10vw]'>
+                <motion.div style={{x: x2}} className='flex relative gap-10 left-[-10vw] w-[150vw]'>
                     {
                         slider2.map( (project, index) => {
-                            return <div key={index} className='w-1/4 h-[20vw] flex items-center justify-center' style={{backgroundColor: project.color}} >
+                            return <div key={index} className='w-[40vw] h-[20vw] flex items-center justify-center' style={{backgroundColor: project.color}} >
                                 <div key={index} className='relative w-3/4 h-3/4'>
                                     <Image 
                                     fill={true}
