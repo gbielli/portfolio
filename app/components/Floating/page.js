@@ -104,7 +104,7 @@ const Floating = () => {
         </div>
         <div className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-center'>
         <h1 className='text-4xl font-clash'>Mes outils préférés</h1>
-        <p>l'outil ne fait pas le moine</p>
+        <p>l&apos;outil ne fait pas le moine</p>
       </div>
     </section>
   )
