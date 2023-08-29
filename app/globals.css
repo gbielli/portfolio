@@ -11,3 +11,13 @@ body{
   font-family: var(--font-archivo);
   background-color: #f8f8f8;
 }
+
+.cursor {
+  width: 42px;
+  height: 42px;
+  border-radius:50%;
+  background-color: #111;
+  position: fixed;
+  top:0;
+  left: 0;
+}

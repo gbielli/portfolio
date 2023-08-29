@@ -58,7 +58,8 @@ const Floating = () => {
 
   return (
     <section onMouseMove={(e) => {manageMouseMove(e)}} className='relative w-full h-[80vh] overflow-hidden bg-white'>
-        <div ref={plane1} className='w-full h-full absolute'>
+        <div 
+         ref={plane1} className='w-full h-full absolute' >
         <Image 
             className='absolute left-[60%] top-[70%]'
             src={ads}

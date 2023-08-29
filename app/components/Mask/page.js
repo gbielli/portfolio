@@ -7,12 +7,13 @@ import { animation } from './animation'
 
 export default function MaskText() {
 
+
   const phrase2 = "Le marketing créé des tickets, Les développeurs débordés les réaliseront dans 6 mois. Et si on changeait la donne ?"
 
  const phrase = "Un développeur manque souvent de sensibilité marketing, et un marketeur manque souvent de connaissance en développement web. J'ai décidé de faire les deux."
 
 
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
       threshold: 0.75,
       triggerOnce: true
     });
@@ -29,7 +30,7 @@ export default function MaskText() {
         }
       </div> */}
 
-      <div className='xl:w-2/3  md:w-4/5 w-full px-8 leading-10'>
+      <div className='mask xl:w-2/3  md:w-4/5 w-full px-8 leading-10'>
 
      <h4 ref={ref} className="overflow-hidden">
       {
