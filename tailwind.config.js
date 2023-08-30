@@ -10,7 +10,7 @@ module.exports = {
     colors: {
       gris: '#f8f8f8',
       beige: '#FFFDF4',
-      black: '#141414',
+      black: '#1B1B1B',
       white: '#fff'
     },
     extend: {

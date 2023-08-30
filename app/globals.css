@@ -11,3 +11,7 @@ body{
   font-family: var(--font-archivo);
   background-color: #f8f8f8;
 }
+
+.footer-text {
+  font-size: clamp(2.375rem, 1.95rem + 1.7vw, 3.4375rem);
+}
