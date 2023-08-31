@@ -1,16 +1,18 @@
-import React from 'react'
+'use client';
+
+import React, { useState } from 'react';
+import styles from './style.module.scss'
 
 const Header = () => {
-  return (
-    <div className='flex justify-between px-6 py-4 mx-auto absolute top-0 w-full text-black '>
-          <div className=' bg-slate-200'>Guillaume Bielli</div>
-          <div className='flex gap-10'>
-            <a href="">À propos</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
-          </div>
 
-    </div>)
+  const [isActive, setIsActive] = useState(false);
+  return (
+    <>
+      <div onClick={() => setIsActive(prev => !prev)} className={styles.button}>
+        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
+      </div>
+    </>
+  )
 }
 
 export default Header
