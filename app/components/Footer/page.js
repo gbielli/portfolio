@@ -6,10 +6,10 @@ import Avatar from '../../../public/images/gb-avatar.png'
 
 const Footer = () => {
   return (
-    <div className=' bg-black'>
+    <div className=' bg-black rounded-t-3xl'>
       <div className="bloc flex flex-col gap-5  px-10 py-5 mx-auto h-full justify-between">
 
-        <div className='flex flex-col gap-10 pt-5 md:pt-10'>
+        <div className='flex flex-col gap-10 pt-10'>
         <div className="title-footer flex gap-3 relative">
           <div className='image absolute md:top-0'>
           <Image className='object-cover w-[60px] md:w-[80px]' src={Avatar} width={80} height={80} />
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className='flex justify-between'>
         <div>
-          <a href="">©Guillaume Bielli - 2023</a>
+          <a href="">©2023 - Guillaume Bielli</a>
           </div>
           <div className='flex gap-5'>
           <a href="">Linkedin</a>

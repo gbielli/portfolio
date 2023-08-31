@@ -29,7 +29,7 @@ export default function MaskText() {
         }
       </div> */}
 
-      <div className='xl:w-2/3  md:w-4/5 w-full px-8 leading-10'>
+      <div className='xl:w-2/4  md:w-4/5 w-full px-8 leading-10'>
 
      <h4 ref={ref} className="overflow-hidden">
       {
