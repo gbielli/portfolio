@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <>
       <div onClick={() => setIsActive(prev => !prev)} className={styles.button}>
+      <div className='text-white'>Menu</div>
         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
+
       </div>
     </>
   )
