@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skill = () => {
   return (
-    <section className='py-40 px-10'>
+    <section className='py-40 px-10 z-1 relative'>
         <div className=''>
             <div>
             <h2 className='font-clash text-[46px]'>Je peux vous aider sur ...</h2>

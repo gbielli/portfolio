@@ -1,20 +1,36 @@
-import React from 'react'
+'use client'
+
+import React, { useRef, useEffect} from 'react'
+import {motion, useTransform, useScroll} from 'framer-motion'
 import Image from 'next/image'
 import Message from '../../../public/images/message.svg';
 import Phone from '../../../public/images/phone.svg'
 import Avatar from '../../../public/images/gb-avatar.png'
 
 const Footer = () => {
+
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end end"]
+})
+
+const y = useTransform(scrollYProgress, [0, 1], [200, 0]);
+const x = useTransform(scrollYProgress, [0, 1], [0, 1000]);
+
+
+
   return (
-    <div className=' bg-black rounded-t-3xl'>
+    <motion.div  ref={container} style={{ y }} className=' bg-black rounded-t-3xl relative '>
       <div className="bloc flex flex-col gap-5  px-10 py-5 mx-auto h-full justify-between">
 
-        <div className='flex flex-col gap-10 pt-10'>
+        <div className='flex flex-col gap-10 pt-20'>
         <div className="title-footer flex gap-3 relative">
           <div className='image absolute md:top-0'>
           <Image className='object-cover w-[60px] md:w-[80px]' src={Avatar} width={80} height={80} />
           </div>
-          <div className='indent-[70px] md:indent-[100px]  '>
+          <div className='indent-[70px] md:indent-[100px]'>
           <h2 className='footer-text font-clash text-white lg:w-3/4 xl:w-3/5  lg:leading-[72px]'>Et si on prenait le temps de se connaître ou de partager un café ?</h2>
 
           </div>
@@ -29,9 +45,16 @@ const Footer = () => {
           <span>0622895608</span></button>
         </div>
         </div>
-        <div class="link w-full text-white flex-col justify-between">
-        <div className='w-full h-[0.5px] bg-white mx-auto mb-4'>
-        </div>
+        <div className="link w-full text-white flex-col justify-between">
+          
+      
+  
+          <div className='w-full h-[0.5px] bg-white mx-auto mb-5 relative'>
+          <motion.div style={{ x }} className='h-6 w-6 bg-[#306bfdff] rounded-full absolute -top-[12px]'></motion.div>
+          </div>
+
+        
+
 
         <div className='flex justify-between'>
         <div>
@@ -48,7 +71,7 @@ const Footer = () => {
 
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
