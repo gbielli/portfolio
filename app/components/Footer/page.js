@@ -16,8 +16,8 @@ const Footer = () => {
     offset: ["start end", "end end"]
 })
 
-const y = useTransform(scrollYProgress, [0, 1], [200, 0]);
-const x = useTransform(scrollYProgress, [0, 1], [0, 1000]);
+const y = useTransform(scrollYProgress, [0, 1], [300, 0]);
+// const x = useTransform(scrollYProgress, [0, 1], [0, 1000]);
 
 
 
@@ -50,7 +50,7 @@ const x = useTransform(scrollYProgress, [0, 1], [0, 1000]);
       
   
           <div className='w-full h-[0.5px] bg-white mx-auto mb-5 relative'>
-          <motion.div style={{ x }} className='h-6 w-6 bg-[#306bfdff] rounded-full absolute -top-[12px]'></motion.div>
+          {/* <motion.div style={{ x }} className='h-6 w-6 bg-[#306bfdff] rounded-full absolute -top-[12px]'></motion.div> */}
           </div>
 
         

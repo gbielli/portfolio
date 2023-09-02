@@ -6,7 +6,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #455CE9;
+    background-color: #1b1b1bff;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -40,6 +40,7 @@
     &::after{
         transform: rotate(45deg);
         top: -1px;
+        
     }
 
     &::before{
@@ -48,3 +49,10 @@
     }
     
 }
+
+.buttonActive {
+        transition: background-color 0.2s linear;
+        background-color: #306bfd;
+
+    }
+    
