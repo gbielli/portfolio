@@ -13,11 +13,6 @@ export const slide = {
     exit: i => ({y: 80, transition:{duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}})
 }
 
-export const scale = {
-    open: {scale: 1, transition: {duration: 0.3}},
-    closed: {scale: 0, transition: {duration: 0.4}}
-}
-
 export const translate = {
   initial: {
       y: "100%",
@@ -35,17 +30,20 @@ export const translate = {
   })
 }
 
+export const blur = {
+  initial: {
+      filter: "blur(0px)",
+      opacity: 1
+  },
+  open: {
+      filter: "blur(2px)",
+      opacity: 0.6,
+      transition: {duration: 0.2}
+  },
+  closed: {
+      filter: "blur(0px)",
+      opacity: 1,
+      transition: {duration: 0.2}
 
-export const height = {
-    initial: {
-      height: 0
-    },
-    enter: {
-      height: "auto",
-      transition
-    },
-    exit: {
-      height: 0,
-      transition
-    }
+  }
 }
