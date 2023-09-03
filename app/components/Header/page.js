@@ -8,7 +8,7 @@ import Nav from './Nav/page'
 const Header = () => {
 
   const [isActive, setIsActive] = useState(false);
-  const [selectedLink, setSelectedLink] = useState({isActive: false, index:0});
+  const [selectedLink, setSelectedLink] = useState({isHover: false, index:0});
 
 
   return (
