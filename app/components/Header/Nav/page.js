@@ -1,26 +1,12 @@
-'use client'
+'use client';
 
 import React from 'react'
-import { height } from '../anim';
 import { motion } from 'framer-motion';
 import { menuSlide, translate, blur  } from '../anim';
 
-const navItems = [
-    {
-        title: "À  propos",
-        href: "/apropos"
-    },
-    {
-        title: "Blog",
-        href: "/blog"
-    },
-    {
-        title: "Contact",
-        href: "/contact"
-    }
-]
 
-const Nav = ({selectedLink, setSelectedLink}) => {
+
+const Nav = ({links, selectedLink, setSelectedLink}) => {
 
 
     const getChars = (word) => {
@@ -47,14 +33,15 @@ const Nav = ({selectedLink, setSelectedLink}) => {
   return (
     <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit"  className=' bg-black fixed top-0 right-0 w-full h-screen md:h-auto'>
        <div className="wrapper flex flex-col pt-20 md:pt-0 items-center h-full md:flex-row gap-10 my-10 mx-10 text-white overflow-hidden">
-        {navItems.map((item, index) => {
+        {links?.map((link, index) => {
+            const { title, href } = link;
             return <motion.p
                 onMouseOver={() => {setSelectedLink({isHover: true, index})}}
                 onMouseLeave={() => {setSelectedLink({isHover: false, index})}}
                 variants={blur}
                 key={index}
                 animate={selectedLink.isHover && selectedLink.index != index ? "open" : "closed" }
-                className='text-3xl no-underline' href={item.href}>{getChars(item.title)}</motion.p>
+                className='text-3xl no-underline' href={href}>{getChars(title)}</motion.p>
 
         })}
        </div>

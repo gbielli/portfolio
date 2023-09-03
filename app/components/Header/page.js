@@ -3,12 +3,13 @@
 import React, { useState } from 'react';
 import styles from './style.module.scss'
 import { motion, AnimatePresence } from 'framer-motion';
-import Nav from './Nav/page'
+import Link from './Link/page'
+
 
 const Header = () => {
+  
 
   const [isActive, setIsActive] = useState(false);
-  const [selectedLink, setSelectedLink] = useState({isHover: false, index:0});
 
 
   return (
@@ -16,7 +17,7 @@ const Header = () => {
       <div className='relative flex justify-between'>
 
     <AnimatePresence mode='wait'>
-      {isActive && <Nav selectedLink={selectedLink} setSelectedLink={setSelectedLink} />}
+      {isActive && <Link />}
     </AnimatePresence>
 
 <div onClick={() => setIsActive(prev => !prev)} className={`${styles.button} ${isActive ? styles.buttonActive : ""}`}>
