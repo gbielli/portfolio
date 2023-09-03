@@ -1,4 +1,4 @@
-const transition = {duration: 0.5, ease: [0.76, 0, 0.24, 1]}
+const transition = {duration: 1, ease: [0.76, 0, 0.24, 1]}
 
 
 export const menuSlide = {
@@ -8,9 +8,9 @@ export const menuSlide = {
 }
 
 export const slide = {
-    initial: {x: 80},
-    enter: i => ({x: 0, transition:{duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}}),
-    exit: i => ({x: 80, transition:{duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}})
+    initial: {y: 80},
+    enter: i => ({y: 0, transition:{duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}}),
+    exit: i => ({y: 80, transition:{duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i}})
 }
 
 export const scale = {
@@ -18,6 +18,22 @@ export const scale = {
     closed: {scale: 0, transition: {duration: 0.4}}
 }
 
+export const translate = {
+  initial: {
+      y: "100%",
+      opacity: 0
+  },
+  enter: (i) => ({
+      y: 0,
+      opacity: 1,
+      transition: {duration: 1, ease: [0.76, 0, 0.24, 1], delay: i[0]}
+  }),
+  exit: (i) => ({
+      y: "100%",
+      opacity: 0,
+      transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1]}
+  })
+}
 
 
 export const height = {
