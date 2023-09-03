@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { height } from '../anim';
 import { motion } from 'framer-motion';
