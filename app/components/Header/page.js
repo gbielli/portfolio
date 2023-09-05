@@ -13,8 +13,23 @@ const Header = () => {
 
 
   return (
-    <div className="relative z-10 box-border">
+    <>
+<div className='menu flex justify-between w-full px-6 py-6'>
+      <div className='logo'>
+        Guillaume Bielli
+      </div>
+      <div className='links flex gap-10'>
+        <a>About</a>
+        <a>Blog</a>
+        <a>Contact</a>
+
+      </div>
+
+      </div>
+
+      
       <div className='relative flex justify-between'>
+      
 
     <AnimatePresence mode='wait'>
       {isActive && <Link />}
@@ -25,9 +40,7 @@ const Header = () => {
 </div>
 
       </div>
-    
-    
-    </div>
+      </>
   )
 }
 

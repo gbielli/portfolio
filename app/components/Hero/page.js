@@ -52,9 +52,9 @@ const Hero = () => {
   return (
     <>
 
-      <div className='h-screen flex items-center bg-grey'>
+      <div className='md:h-screen flex items-center bg-grey'>
 
-        <div className='px-6 w-full text-gray-200 flex flex-col items-center flex-1 gap-10 pt-20' >
+        <div className='px-6 w-full text-gray-200 flex flex-col items-center flex-1 gap-20 pt-40' >
 
           <div className='img self-start relative'>
             <Image
@@ -64,10 +64,10 @@ const Hero = () => {
             className='w-[30px] h-[30px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
             <div ref={textAnimation}>
             <ReactCurvedText
-            width={240}
-            height={240}
-            cx={120}
-            cy={120}
+            width={140}
+            height={140}
+            cx={70}
+            cy={70}
             rx={60}
             ry={60}
             startOffset={20}
@@ -82,18 +82,18 @@ const Hero = () => {
         />
         </div>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-3 mx-auto gap-5'>
+          <div className='grid grid-cols-1 md:grid-cols-3 mx-auto gap-10'>
 
-          <h1 ref={ref} className="col-span-2 leading-none">
+          <h1 ref={ref} className="col-span-2 leading-4">
       {
       text.split(" ").map((word, index) => {
-    return <span className='overflow-hidden relative inline-flex' key={index}><motion.span className="text-[17vw] font-clash text-black" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
+    return <span className='overflow-hidden relative inline-flex leading-none' key={index}><motion.span className="text-[24vw] md:text-[17vw] font-clash text-black leading-1" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
             
         })
         }
     </h1>
-            <div className='col col-span-1 self-end max-w-xs mb-7 overflow-hidden'>
-              <motion.p className='text-[1.1em]' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J&apos;aide les entreprises à développer l&apos;acquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
+            <div className='col col-span-1 self-end max-w-xs overflow-hidden relative'>
+              <motion.p className='text-[16px]  text-black pb-5 lg:pb-10' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J&apos;aide les entreprises à développer l&apos;acquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
               </div>
           </div>
 
