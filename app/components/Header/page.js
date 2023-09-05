@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-<div className='menu flex justify-between w-full px-6 py-6'>
+<div className='menu flex justify-between w-full px-6 py-6 relative'>
       <div className='logo'>
         Guillaume Bielli
       </div>
@@ -28,7 +28,7 @@ const Header = () => {
       </div>
 
       
-      <div className='relative flex justify-between'>
+      <div className='flex justify-between'>
       
 
     <AnimatePresence mode='wait'>
