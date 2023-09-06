@@ -19,15 +19,6 @@ export default function MaskText() {
   
     return(
         <section className='bg-grey block mt-20'>
-      {/* <div ref={ref} className="">
-        {
-          phrases.map( (phrase, index) => {
-            return <div key={index} className="overflow-hidden">
-              <motion.p custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""}>{phrase}</motion.p>
-            </div>
-          })
-        }
-      </div> */}
 
       <div className='xl:w-2/4  md:w-4/5 w-full px-8 leading-10'>
 

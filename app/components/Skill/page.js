@@ -1,29 +1,43 @@
 import React from 'react'
+import arrow  from '@/public/images/arrow-down.svg'
+import Image from 'next/image'
 
 const Skill = () => {
   return (
-    <section className='py-40 px-10 z-1 relative'>
+    <section className='py-40 px-20 z-1 relative'>
         <div className=''>
             <div>
-            <h2 className='font-clash text-[46px]'>Je peux vous aider sur ...</h2>
+            <h2 className='font-archivo text-xl text-[#808080]'>Je peux vous aider sur ...</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-20">
-                <div className='item font-archivo'>
-                    <p className='border-b border-b-[#BFBFC0] pb-4 mb-6 text-[#BFBFC0] text-lg'>01</p>
-                    <h3 className='text-[28px] font-clash pb-4'>Acquisition</h3>
-                    <p>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.</p>
+            <div className="grid grid-cols-1 md:grid-cols-1 mt-10 cursor-pointer">
+
+            <div className="border-b border-t border-[#d4d4d4]">
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#808080] hover:translate-x-2.5 transition-all duration-300'>
+                    <div className='flex items-center gap-10 h-full'>
+                    <h2 className='text-[55px] font-clash pb-4 w-full'>Acquisition client</h2>
+                    <p className='md:w-2/3 w-4/5 justify-end'>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs.</p>
+                    </div>
+                </div>
+            </div>
+
+                <div className="border-b border-t border-[#d4d4d4]">
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#808080] hover:translate-x-2.5 transition-all duration-300'>
+                    <div className='flex items-center gap-10 h-full'>
+                    <h2 className='text-[55px] font-clash pb-4 w-full'>User Experience</h2>
+                    <p className='md:w-2/3 w-4/5 justify-end'>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs.</p>
+                    </div>
+                </div>
                 </div>
 
-                <div className='item font-archivo'>
-                    <p className='border-b border-b-[#BFBFC0] pb-4  mb-6 text-[#BFBFC0]  text-lg'>02</p>
-                    <h3 className='text-[28px] font-clash pb-4'>User expérience</h3>
-                    <p>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.</p>
+                <div className="border-b border-t border-[#d4d4d4]">
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#808080] hover:translate-x-2.5 transition-all duration-300'>
+                    <div className='flex items-center gap-10 h-full'>
+                    <h2 className='text-[55px] font-clash pb-4 w-full'>Web Analytics</h2>
+                    <p className='md:w-2/3 w-4/5 justify-end'>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs.</p>
+                    </div>
                 </div>
-                <div className='item font-archivo'>
-                    <p className='border-b border-b-[#BFBFC0] pb-4  mb-6 text-[#BFBFC0]  text-lg'>03</p>
-                    <h3 className='text-[28px] font-clash pb-4'>Web analytics</h3>
-                    <p>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.</p>
-                </div>
+            </div>
+
             </div>
         </div>
         

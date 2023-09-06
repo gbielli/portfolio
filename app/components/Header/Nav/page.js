@@ -9,6 +9,7 @@ import { menuSlide, translate, blur  } from '../anim';
 const Nav = ({links, selectedLink, setSelectedLink}) => {
 
 
+
     const getChars = (word) => {
         let chars = [];
         word.split("").forEach((char, i) => {
