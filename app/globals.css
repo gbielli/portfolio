@@ -15,3 +15,7 @@ body{
 .footer-text {
   font-size: clamp(2.375rem, 1.95rem + 1.7vw, 3.4375rem);
 }
+
+.font-skills {
+  font-size: clamp(1.875rem, 1.25rem + 2.5vw, 3.4375rem);
+}

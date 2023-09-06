@@ -93,7 +93,7 @@ const Hero = () => {
         }
     </h1>
             <div className='col col-span-1 self-end max-w-xs overflow-hidden relative'>
-              <motion.p className='text-[16px]  text-black pb-5 lg:pb-10' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J&apos;aide les entreprises à développer l&apos;acquisition client (SEO, SEA, automation), la User Experience et la Web Analyse.</motion.p>
+              <motion.p className='text-[16px]  text-black pb-5 lg:pb-10' variants={animation} initial="initial" animate={inView ? "enter" : ""}>J&apos;aide les entreprises à développer l&apos;acquisition client et à construire une expérience utilisateur hors norme.</motion.p>
               </div>
           </div>
 
