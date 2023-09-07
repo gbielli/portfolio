@@ -15,7 +15,7 @@ const clashDisplay = localFont({
 const archivo = localFont({
   src: [
     {
-      path: '../public/fonts/Archivo-Regular.ttf',
+      path: '../public/fonts/Archivo-Regular.woff2',
     },
   ],
   variable: '--font-archivo'

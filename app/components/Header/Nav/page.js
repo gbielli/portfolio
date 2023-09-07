@@ -17,7 +17,7 @@ const Nav = ({links, selectedLink, setSelectedLink}) => {
             <motion.span 
             className='inline-block uppercase select-none'
             variants={translate}
-            custom={[i * 0.02, (word.length - i) * 0.01]}
+            custom={[i * 0.02, (word.length - i) * 0.02]}
             initial="initial"
             animate="enter"
             exit="exit"

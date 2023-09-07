@@ -1,4 +1,4 @@
-const transition = {duration: 1, ease: [0.76, 0, 0.24, 1]}
+const transition = {duration: 0.7, ease: [0.76, 0, 0.24, 1]}
 
 
 export const menuSlide = {
@@ -26,7 +26,7 @@ export const translate = {
   exit: (i) => ({
       y: "100%",
       opacity: 0,
-      transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1]}
+      transition: {duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: i[1]}
   })
 }
 

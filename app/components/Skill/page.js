@@ -14,8 +14,8 @@ const Skill = () => {
             <div className="border-b border-t border-[#d4d4d4]">
                 <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#808080] hover:translate-x-2.5 transition-all duration-300'>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left'>
-                    <h3 className='font-skills text-[55px] font-clash pb-4 w-full'>Acquisition client</h3>
-                    <p className='md:w-2/3 md:justify-end'>Je développe votre stratégie SEO et SEA avec une logique data-driven et des outils d'automisation.</p>
+                    <h3 className='font-skills text-[55px] font-clash pb-4 w-full'>Acquisition client<div className='inline-block font-archivo text-[#808080] text-lg font-normal -translate-y-5 ml-2'>01</div></h3>
+                    <p className='md:w-2/3 md:justify-end font-thin'>Je développe votre stratégie SEO et SEA avec une logique data-driven et des outils d'automisation.</p>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@ const Skill = () => {
                 <div className="border-b border-t border-[#d4d4d4]">
                 <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#808080] hover:translate-x-2.5 transition-all duration-300'>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left'>
-                    <h3 className='font-skills text-[55px] font-clash pb-4 w-full'>User Experience</h3>
+                    <h3 className='font-skills text-[55px] font-clash pb-4 w-full'>User Experience<div className='inline-block font-archivo text-[#808080] text-lg font-normal -translate-y-5 ml-2'>02</div></h3>
                     <p className='md:w-2/3 md:justify-end'>Je vous accompagne sur le plan créatif et technique pour développer une expérience utilisateur mémorable.</p>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const Skill = () => {
                 <div className="border-b border-t border-[#d4d4d4]">
                 <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#808080] hover:translate-x-2.5 transition-all duration-300'>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left'>
-                    <h3 className='font-skills text-[55px] font-clash pb-4 w-full'>Web Analytics</h3>
+                    <h3 className='font-skills text-[55px] font-clash pb-4 w-full'>Web Analytics<div className='inline-block font-archivo text-[#808080] text-lg font-normal -translate-y-5 ml-2'>03</div></h3>
                     <p className='md:w-2/3 md:justify-end'>Je mets en place votre suivi avec des outils RGPD compliant comme peut l'être Matomo ou Piwik Pro.</p>
                     </div>
                 </div>
