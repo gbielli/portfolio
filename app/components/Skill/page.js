@@ -18,7 +18,7 @@ const Skill = () => {
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Acquisition client</h3>
                     <div className='font-archivo text-[#c3c4c9] text-sm font-normal ml-1 translate-y-3'>01</div>
                     </div>
-                    <p className='md:w-2/3'>Je développe votre stratégie SEO et SEA avec une logique data-driven et des outils d'automisation.</p>
+                    <p className='md:w-2/3'>Je développe votre stratégie SEO et SEA avec une logique data-driven et des outils d&apos;automisation.</p>
                     </div>
                 </div>
             </div>
