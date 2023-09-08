@@ -6,7 +6,7 @@ import localFont from 'next/font/local'
 const clashDisplay = localFont({
   src: [
     {
-      path: '..//public/fonts/ClashDisplay-Semibold.ttf',
+      path: '..//public/fonts/ClashDisplay-Semibold.woff2',
     },
   ],
   variable: '--font-clash'

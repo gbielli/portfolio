@@ -32,7 +32,7 @@ const Nav = ({links, selectedLink, setSelectedLink}) => {
     }
 
   return (
-    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit"  className=' bg-black fixed top-0 right-0 w-full h-screen md:h-auto'>
+    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit"  className=' bg-black fixed top-0 right-0 w-full h-screen md:h-auto z-10'>
        <div className="wrapper flex flex-col pt-20 md:pt-0 items-center h-full md:flex-row gap-10 my-10 mx-10 text-white overflow-hidden">
         {links?.map((link, index) => {
             const { title, href } = link;
