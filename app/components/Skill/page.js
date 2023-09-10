@@ -42,7 +42,7 @@ const Skill = () => {
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Automation</h3>
                     <div className='font-archivo text-[#c3c4c9] text-sm font-normal ml-1 translate-y-3'>03</div>
                     </div>
-                    <p className='md:w-2/3'>J'automatise des tâches et je connecte vos outils pour maximiser le ROI.</p>
+                    <p className='md:w-2/3'>J&apos;automatise des tâches et je connecte vos outils pour maximiser le ROI.</p>
                     </div>
                 </div>
                 </div>
