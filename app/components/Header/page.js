@@ -4,10 +4,10 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
 import styles from './style.module.scss';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 import Link from './Link/page';
-import { buttonSlide} from './anim';
+import { buttonSlide } from './anim';
 
 
 const Header = () => {
