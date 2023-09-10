@@ -1,10 +1,26 @@
 const transition = {duration: 0.7, ease: [0.76, 0, 0.24, 1]}
 
+export const scale = {
+    initial:{scale:0},
+    enter:{scale:0},
+    exit:{scale:1,transition}
+}
+
 
 export const menuSlide = {
     initial: {y: "calc(-100% - 100px)"},
     enter: {y: "0", transition},
     exit: {y: "calc(-100% - 100px)", transition}
+}
+
+export const buttonSlide = {
+    initial: {
+        y: "-80px",
+        transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1]}
+    },
+    enter: {
+        y:"0",
+        transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1]}},
 }
 
 export const slide = {

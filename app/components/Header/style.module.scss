@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow:hidden;
 }
 
 .burger{
@@ -50,13 +51,10 @@
     &::before{
         transform: rotate(-45deg);
         top: 0px;
+
     }
     
 }
 
-.buttonActive {
-        transition: background-color 0.3s linear;
-        background-color: #306bfd;
 
-    }
     

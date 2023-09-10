@@ -1,6 +1,6 @@
 import React from 'react'
 import arrow  from '@/public/images/arrow-down.svg'
-import Image from 'next/image'
+
 
 const Skill = () => {
   return (
@@ -13,12 +13,12 @@ const Skill = () => {
 
             <div className="border-b border-t border-[#d4d4d4]">
                 <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
-                    <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left'>
+                <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
                     <div className="title flex w-full">
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Acquisition client</h3>
                     <div className='font-archivo text-[#c3c4c9] text-sm font-normal ml-1 translate-y-3'>01</div>
                     </div>
-                    <p className='md:w-2/3'>Je développe votre stratégie SEO et SEA avec une logique data-driven et des outils d&apos;automisation.</p>
+                    <p className='md:w-2/3'>Je développe votre stratégie SEO et SEA avec une logique data-driven.</p>
                     </div>
                 </div>
             </div>
@@ -38,11 +38,23 @@ const Skill = () => {
                 <div className="border-b border-t border-[#d4d4d4]">
                 <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
-                        <div className="title flex w-full">
-                    <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Web Analytics</h3>
+                    <div className="title flex w-full">
+                    <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Automation</h3>
                     <div className='font-archivo text-[#c3c4c9] text-sm font-normal ml-1 translate-y-3'>03</div>
                     </div>
-                    <p className='md:w-2/3 '>Je mets en place votre suivi avec des outils RGPD compliant comme peut l&apos;être Matomo ou Piwik Pro.</p>
+                    <p className='md:w-2/3'>J'automatise des tâches et je connecte vos outils pour maximiser le ROI.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div className="border-b border-t border-[#d4d4d4]">
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
+                    <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
+                        <div className="title flex w-full">
+                    <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Web Analytics</h3>
+                    <div className='font-archivo text-[#c3c4c9] text-sm font-normal ml-1 translate-y-3'>04</div>
+                    </div>
+                    <p className='md:w-2/3 '>Je mets en place un suivi utilisateurs first party avec des outils RGPD compliant comme Matomo ou Piwik Pro.</p>
                     </div>
                 </div>
             </div>

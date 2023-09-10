@@ -5,12 +5,14 @@ import ReactCurvedText from 'react-curved-text';
 import Image from 'next/image';
 import arrow from '../../../public/images/arrow.svg'
 import { motion } from 'framer-motion';
+import { useScroll } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ScrollTrigger } from 'gsap/all';
 import {animation} from './animation';
 import { gsap } from 'gsap';
 
 const Hero = () => {
+
 
 
   const textAnimation = useRef(null);
