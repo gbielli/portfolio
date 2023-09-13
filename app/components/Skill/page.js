@@ -1,8 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import arrow  from '@/public/images/arrow-down.svg'
+import arrowRight from '@/public/images/arrow-top-right.svg'
+import styles from './style.module.scss'
+import {motion} from 'framer-motion'
 
 
 const Skill = () => {
+
+    const [isHover, setIsHover] = useState(false);
+    const [leave, setLeave] = useState(false)
+
+    const handleHover = () => {
+        setIsHover(true)
+    }
+
+    const handleLeave = () => {
+        setIsHover(false)
+    }
+
+
+
   return (
     <section className='py-40 px-2 md:px-20 z-1 relative'>
         <div className=''>
@@ -61,9 +78,23 @@ const Skill = () => {
 
             
             </div>
-            <div className='mt-20 text-center w-full block'>
-            <button className='border border-black px-10 py-5 rounded-full text-center'>
-          <span>En savoir plus</span></button>
+            <div className='mt-20 text-center'>
+            <button className={`border border-black px-20 py-5 rounded-full text-center relative overflow-hidden`}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleLeave}>
+            <span className='sr-only'>En savoir plus</span>
+            <div className='overflow-hidden flex justify-center items-center'>
+            
+            <motion.span
+            data-name={arrowRight}
+            animate={isHover ? {y:-32, transition:{duration: 0.5, ease: [0.76, 0, 0.24, 1]}} : {y:0, transition:{duration: 0.5, ease: [0.76, 0, 0.24, 1]}}}
+            aria-hidden
+            className='inline-block mx-auto relative h-8 after:w-8 leading-8 after:absolute after:left-10 after:top-full after:leading-8 after:h-8 after:content-arrowIcon'
+            >En savoir plus</motion.span>
+            </div>
+        
+          </button>
+
           </div>
         </div>
         

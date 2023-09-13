@@ -14,6 +14,9 @@ module.exports = {
       white: '#fff'
     },
     extend: {
+      content: {
+        arrowIcon: 'url("../public/images/arrow-top-right.svg")'
+      },
       fontSize: {
         clamp: "clamp(16vw, 1.2vw, 19px)",
       },
