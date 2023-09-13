@@ -1,3 +1,5 @@
+'use client'
+
 import React, {useState} from 'react'
 import arrow  from '@/public/images/arrow-down.svg'
 import arrowRight from '@/public/images/arrow-top-right.svg'
