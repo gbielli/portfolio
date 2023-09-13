@@ -21,7 +21,7 @@ const Floating = () => {
 
 
   return (
-    <section className=' w-full bg-white z-1 relative z-10' ref={container}>
+    <section className=' w-full z-1 relative z-10 h-[400px]' ref={container}>
 
         <div className=''>
         <h1 className='text-4xl font-clash'>Mes outils préférés</h1>

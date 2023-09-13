@@ -56,7 +56,7 @@ const Hero = () => {
 
       <div className='md:h-screen flex items-center bg-grey'>
 
-        <div className='px-6 w-full text-gray-200 flex flex-col items-center flex-1 gap-20' >
+        <div className='px-6 pt-20 w-full text-gray-200 flex flex-col items-center flex-1 gap-20' >
 
           <div className='img self-start relative'>
             <Image
