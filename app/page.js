@@ -6,7 +6,6 @@ import Hero from './components/Hero/page';
 import MaskText from './components/Mask/page';
 import Slider from './components/Slider/page'
 import Skill from './components/Skill/page'
-import Floating from './components/Floating/page';
 
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
     <MaskText />
     <Slider />
     <Skill />
-    <Floating />
     </>
   )
 }

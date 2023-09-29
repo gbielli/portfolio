@@ -18,7 +18,7 @@ export default function MaskText() {
     });
   
     return(
-        <section className='bg-grey block mt-20'>
+        <section className='bg-grey block mt-10'>
 
       <div className='xl:w-2/4  md:w-4/5 w-full px-8 leading-10'>
 

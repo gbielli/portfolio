@@ -31,7 +31,7 @@ const Skill = () => {
             <div className="grid grid-cols-1 md:grid-cols-1 mt-10 cursor-pointer">
 
             <div className="border-b border-t border-[#d4d4d4]">
-                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem]'>
                 <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
                     <div className="title flex w-full">
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Acquisition client</h3>
@@ -43,7 +43,7 @@ const Skill = () => {
             </div>
 
                 <div className="border-b border-t border-[#d4d4d4]">
-                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem]'>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
                     <div className="title flex w-full">
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>User experience</h3>
@@ -55,7 +55,7 @@ const Skill = () => {
                 </div>
 
                 <div className="border-b border-t border-[#d4d4d4]">
-                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem] '>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
                     <div className="title flex w-full">
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Automation</h3>
@@ -67,7 +67,7 @@ const Skill = () => {
                 </div>
 
                 <div className="border-b border-t border-[#d4d4d4]">
-                <div className='item font-archivo flex items-center justify-between py-[3.5rem] hover:text-[#c3c4c9] hover:translate-x-2.5 transition-all duration-300'>
+                <div className='item font-archivo flex items-center justify-between py-[3.5rem] '>
                     <div className='flex items-center md:gap-10 h-full flex-col md:flex-row md:text-left w-full'>
                         <div className="title flex w-full">
                     <h3 className='font-skills text-[55px] font-clash pb-4 relative'>Web Analytics</h3>

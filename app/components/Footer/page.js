@@ -17,7 +17,7 @@ const Footer = () => {
 })
 
 
-const y = useTransform(scrollYProgress, [0, 1], [200, 0]);
+const y = useTransform(scrollYProgress, [0, 1], [-100, 0]);
 
 
 
