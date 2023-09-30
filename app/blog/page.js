@@ -4,7 +4,7 @@ import BlogTitle from '../components/Blog/BlogTitle/page'
 import FeaturedArticle from '../components/Blog/FeaturedArticle/page'
 import { useEffect } from 'react';
 
-const page = () => {
+const Blog = () => {
 
   useEffect( () => {
     const initializeLocomotiveScroll = async () => {
@@ -26,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Blog
