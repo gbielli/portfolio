@@ -1,8 +1,28 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import BlogTitle from '../components/Blog/BlogTitle/page'
+import FeaturedArticle from '../components/Blog/FeaturedArticle/page'
+import { useEffect } from 'react';
 
 const page = () => {
+
+  useEffect( () => {
+    const initializeLocomotiveScroll = async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+
+    }
+    initializeLocomotiveScroll(); 
+  
+  }, [])
+
+
+  
   return (
-    <div>page</div>
+    <div>
+      <BlogTitle />
+      <FeaturedArticle />
+    </div>
   )
 }
 

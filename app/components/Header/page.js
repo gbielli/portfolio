@@ -8,8 +8,6 @@ import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 import Link from './Link/page';
 import { buttonSlide } from './anim';
-import memoji from '../../../public/images/memoji.png'
-import Image from 'next/image';
 
 
 const Header = () => {
@@ -40,11 +38,11 @@ const Header = () => {
     <>
 <div ref={container} className='menu flex justify-between w-full px-6 py-6 z-4'>
       <div className='logo'>
-          <span>Guillaume Bielli</span>
+          <span>© Guillaume Bielli</span>
       </div>
       <div className='links flex gap-10 cursor-pointer'>
         <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:rounded-full after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">About</a>
-        <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:rounded-full after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Blog</a>
+        <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:rounded-full after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"  href='/blog'>Blog</a>
         <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[1px] after:rounded-full after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Contact</a>
       </div>
 
@@ -54,7 +52,7 @@ const Header = () => {
       <div className='flex justify-between'>
       
 
-    <AnimatePresence mode='wait'>
+    <AnimatePresence mode='wait'> 
       {isActive && <Link />}
     </AnimatePresence>
 

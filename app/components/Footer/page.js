@@ -9,20 +9,20 @@ import Avatar from '../../../public/images/gb-avatar.png'
 
 const Footer = () => {
 
-  const container = useRef(null);
+//   const container = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end end"]
-})
+//   const { scrollYProgress } = useScroll({
+//     target: container,
+//     offset: ["start end", "end end"]
+// })
 
 
-const y = useTransform(scrollYProgress, [0, 1], [-100, 0]);
+// const y = useTransform(scrollYProgress, [0, 1], [-100, 0]);
 
 
 
   return (
-    <motion.div ref={container} style={{ y }} className=' bg-black rounded-t-3xl relative '>
+    <motion.div  className=' bg-black rounded-t-3xl relative '>
       <div className="bloc flex flex-col gap-5  px-10 py-5 mx-auto h-full justify-between">
 
         <div className='flex flex-col gap-10 pt-20'>

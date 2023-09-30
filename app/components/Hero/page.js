@@ -5,7 +5,6 @@ import ReactCurvedText from 'react-curved-text';
 import Image from 'next/image';
 import arrow from '../../../public/images/arrow.svg'
 import { motion } from 'framer-motion';
-import { useScroll } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ScrollTrigger } from 'gsap/all';
 import {animation} from './animation';
@@ -16,7 +15,6 @@ const Hero = () => {
 
 
   const textAnimation = useRef(null);
-  const slider = useRef(null);
   let xPercent = 0;
   let direction = 5;
 
@@ -86,10 +84,10 @@ const Hero = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-3 mx-auto gap-10'>
 
-          <h1 ref={ref} className="col-span-2 leading-4">
+          <h1 ref={ref} className="col-span-2 w-full">
       {
       text.split(" ").map((word, index) => {
-    return <span className='overflow-hidden relative inline-flex leading-none' key={index}><motion.span className="text-[24vw] md:text-[17vw] font-clash text-black leading-1" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
+    return <span className='overflow-hidden relative inline-flex leading-[17vw]' key={index}><motion.span className="text-[24vw] md:text-[17vw] font-clash text-black leading-[17vw]" custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""} style={{ display: "inline-block" }}>{word}</motion.span></span>
             
         })
         }

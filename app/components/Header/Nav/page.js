@@ -36,13 +36,13 @@ const Nav = ({links, selectedLink, setSelectedLink}) => {
        <div className="wrapper flex flex-col pt-20 md:pt-0 items-center h-full md:flex-row gap-10 my-10 mx-10 text-white overflow-hidden">
         {links?.map((link, index) => {
             const { title, href } = link;
-            return <motion.p
+            return <motion.a
                 onMouseOver={() => {setSelectedLink({isHover: true, index})}}
                 onMouseLeave={() => {setSelectedLink({isHover: false, index})}}
                 variants={blur}
                 key={index}
                 animate={selectedLink.isHover && selectedLink.index != index ? "open" : "closed" }
-                className='text-3xl no-underline' href={href}>{getChars(title)}</motion.p>
+                className='text-3xl no-underline' href={href}>{getChars(title)}</motion.a>
 
         })}
        </div>
