@@ -15,7 +15,7 @@ const FeaturedArticle = () => {
             <h3 className='font-clash text-2xl'>Matomo vs Google Analytics : quelles différences et comment choisir ?</h3>
             <Image className='self-start pt-1' src={arrow} />
           </div>
-          <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l'outil RGPD compliant par excellence.</p>
+          <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l&apos;outil RGPD compliant par excellence.</p>
           <div class="tag mt-3 inline-flex gap-2">
             <p className='border border-black px-3 py-1 rounded-full'>Matomo</p>
             <p className='border border-black px-3 py-1 rounded-full'>Web analytics</p>
@@ -36,7 +36,7 @@ const FeaturedArticle = () => {
             <h3 className='font-clash text-2xl'>Matomo vs Google Analytics : quelles différences et comment choisir ?</h3>
             <Image className='self-start pt-1' src={arrow} />
           </div>
-          <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l'outil RGPD compliant par excellence.</p>
+          <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l&apos;outil RGPD compliant par excellence.</p>
           <div class="tag mt-3 inline-flex gap-2">
             <p className='border border-black px-3 py-1 rounded-full'>Matomo</p>
             <p className='border border-black px-3 py-1 rounded-full'>Web analytics</p>
@@ -55,7 +55,7 @@ const FeaturedArticle = () => {
             <h3 className='font-clash text-2xl'>Matomo vs Google Analytics : quelles différences et comment choisir ?</h3>
             <Image className='self-start pt-1' src={arrow} />
           </div>
-          <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l'outil RGPD compliant par excellence.</p>
+          <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l&apos;outil RGPD compliant par excellence.</p>
           <div class="tag mt-3 inline-flex gap-2">
             <p className='border border-black px-3 py-1 rounded-full'>Matomo</p>
             <p className='border border-black px-3 py-1 rounded-full'>Web analytics</p>
