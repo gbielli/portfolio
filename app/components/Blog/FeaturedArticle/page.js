@@ -2,7 +2,10 @@ import React from 'react'
 import arrow from '@/public/images/arrow-top-right.svg'
 import Image from 'next/image'
 
+
 const FeaturedArticle = () => {
+
+
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mb-[300px] mx-6'>
 
@@ -16,7 +19,7 @@ const FeaturedArticle = () => {
             <Image className='self-start pt-1' src={arrow} />
           </div>
           <p className='mt-1'>Depuis la mise en demeure de Google analytics par la CNIL, des alternatives fleurissent dans le monde du web analytics, comme par exemple Matomo, l&apos;outil RGPD compliant par excellence.</p>
-          <div class="tag mt-3 inline-flex gap-2">
+          <div className="tag mt-3 inline-flex gap-2">
             <p className='border border-black px-3 py-1 rounded-full'>Matomo</p>
             <p className='border border-black px-3 py-1 rounded-full'>Web analytics</p>
           </div>
